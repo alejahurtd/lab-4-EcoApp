@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<title>Create Post</title>
+	</head>
+	<body>
+		<h1>Create Post</h1>
+		<form id="createPostForm">
+			<label for="title">Title:</label>
+			<input type="text" id="title" name="title" placeholder="Title" required />
+
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" placeholder="Description" required></textarea>
+
+			<label for="imageUrl">Image URL:</label>
+			<input type="text" id="imageUrl" name="imageUrl" placeholder="Image URL" />
+
+			<button type="submit" aria-label="Submit the post">Submit</button>
+		</form>
+
+		<div id="message"></div>
+
+		<button id="goBackBtn" aria-label="Go back to the home page">Go Back</button>
+
+		<script src="./js/create-post.js"></script>
+	</body>
+</html>
